@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>e-Voting</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/static/assets/img/favicon.png" rel="icon">
+  <link href="/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><img src="/static/assets/images/ajlogo.png" alt=""> AJIET </h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto"  href="#team">Team</a></li>
+          <!-- <li><a class="nav-link scrollto" href="votingpage.html">Vote</a></li> -->
+          <li class="dropdown"><a href="#"><span>Branch</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% url 'cse' %}">CSE</a></li>
+              <li><a href="{% url 'ise' %}">ISE</a></li>
+              <li><a href="{% url 'ece' %}">ECE</a></li>
+              <li><a href="{% url 'civil' %}">CIV</a></li>
+              <!-- <li><a href="mech.html">MECH</a></li> -->
+              
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Results</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% url 'csepresidentresult'%}">CSE</a></li>
+              <li><a href="#">ISE</a></li>
+              <li><a href="#">ECE</a></li>
+              <li><a href="#">CIV</a></li>
+              <!-- <li><a href="mech.html">MECH</a></li> -->
+              
+            </ul>
+          </li>
+          <!-- <li><a class="nav-link scrollto " href="login.html">login</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <video id="video-background" autoplay muted loop>
+      <source src="/static/assets/images/ajintro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
+  <!-- Content -->
+  <div id="content">
+      <h1>vote to make a difference</h1>
+      <p>We are team of engineers making college election easy.</p>
+      <a href="{% url 'Votingpage' %}" class="btn-get-started scrollto">vote now</a>
+  </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+    
+          <div class="container1">
+            <h2>About AJIET</h2>
+            <h3 class="about1">AJ Institute of Engineering & Technology is promoted by Laxmi Memorial Education Trust (R.) which was registered in the year 1991 in the memory of Late Laxmi Shetty, mother of Dr. A. J. Shetty, who is the President and Managing Director of the Trust.<br><br>
+              Being a pioneer industrialist of South Kanara, Dr. A. J. Shetty started the renowned Star Hotel Moti Mahal,  A.J, Hospital & Research  Centre (Tertiary Care Super Speciality Hospital), A.J. Institute Of Medical Science, A.J. Institute Of Dental Sciences, A.J. Institute Of Management,<br> A. J. Institute Of Paramedical Sciences, Laxmi Memorial College Of Nursing, Laxmi Memorial Institute Of Nursing, Laxmi Memorial College Of Physiotherapy, Moti Mahal College Of Hotel Management (Attached With 3 Star Training Hotel Moti Mahal), Laxmi Memorial College Of Hotel Management, A. J. Institute Of Hospital Management Laxmi Institute Of Paramedical Sciences</h3>
+    
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>What is an online voting system?</h2>
+          <p>An online voting system is a software platform that allows groups to securely conduct votes and elections. High-quality online voting systems balance ballot security, accessibility, and the overall requirements of an organization's voting event.</p>
+        </div> 
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/assets/images/pratham.jpeg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://github.com/PrathamAsaigoli"><i class="bi bi-github"></i></a>
+                  <a href="https://www.instagram.com/pratham_asaigoli/?hl=en"><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Pratham Asaigoli</h4>
+                <span>4JK21CS046</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/assets/images/nith.jpg" class="img-fluid" alt="">
+                <div class="social">
+              
+                  <a href="https://github.com/NitheshS"><i class="bi bi-github"></i></a>
+                  <a href="https://www.instagram.com/mr23kotian/?hl=en"><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Nithesh S Kotian</h4>
+                <span>4JK21CS042</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/assets/images/adi.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  
+                  <a href=""><i class="bi bi-github"></i></a>
+                  <a href="https://www.instagram.com/adithya_acharyaa/?hl=en"><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>K R Adithya</h4>
+                <span>4JK21CS063</span>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+>
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="row  d-flex align-items-stretch">
+
+          <div class="col-lg-6 faq-item">
+            <i class="bx bx-help-circle"></i>
+            <h4>Q: Is online voting secure?</h4>
+            <p>
+              A: Online voting systems employ various security measures, such as encryption and multi-factor authentication, to ensure the integrity and confidentiality of votes. Independent audits and continuous monitoring are conducted to identify and address potential vulnerabilities.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item">
+            <i class="bx bx-help-circle"></i>
+            <h4>Q: How can we trust the accuracy of online voting results?</h4>
+            <p>
+              A: Online voting systems are designed with rigorous testing and validation processes. They often include a paper trail or verifiable audit trail, allowing voters to confirm their choices, and providing a reliable means to verify the accuracy of the results.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item">
+            <i class="bx bx-help-circle"></i>
+            <h4>Q: Can online voting systems prevent multiple voting or voter fraud?</h4>
+            <p>
+              A: Online voting systems employ various measures, such as voter authentication, IP address tracking, and biometric verification, to prevent multiple voting. Additionally, real-time monitoring and post-election audits help detect and address any fraudulent activities.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item">
+            <i class="bx bx-help-circle"></i>
+            <h4>Q: How can voters be assured that their votes are counted accurately?</h4>
+            <p>
+              A: Transparency is a key aspect of online voting systems. Regular audits, public testing, and the use of open-source technologies contribute to the assurance that votes are counted accurately.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8836825781077!2d74.82619107512191!3d12.915196787395018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a7940000001%3A0x37b1d2f42900de85!2sAJ%20Institute%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1705838222707!5m2!1sen!2sin" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="container">
+        <div class="row mt-5 justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-4 info">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>AJ Institute of Engineering & Technology
+                    NH-66,<br> Kottara Chowki, Mangaluru, Karnataka 575006</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>ajenggcollege@gmail.com<br></p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+ 91 (824) 286 2200<br></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-10">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>

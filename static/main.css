@@ -1,0 +1,124 @@
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch; 
+}
+
+.container {
+    width: 45%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+}
+
+.container:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.container img {
+    width: 50px; /* Set the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 15px; /* Add some spacing between image and text */
+}
+
+.container h2, .container p {
+    margin: 0;
+    text-align: left; /* Align text to the left */
+}
+
+
+.submit-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.centered-container {
+    width: 35%;
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+.position {
+    margin-bottom: 20px;
+}
+.candidate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.candidate img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Styles for back button */
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back-button:hover {
+    background-color: #c82333;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #333;
+}
+.branch {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+

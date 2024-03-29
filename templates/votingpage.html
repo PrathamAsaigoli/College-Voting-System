@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0 " name="viewport" />
+    <title>Voting Form</title>
+
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="/static/assets/img/favicon.png" rel="icon" />
+    <link
+      href="/static/assets/img/apple-touch-icon.png"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="/static/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/assets/vendor/remixicon/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <header
+      id="header"
+      class="fixed-top d-flex align-items-center header-transparent"
+    >
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h3 style="color: rgb(0, 0, 0)">
+            <img src="/static/assets/images/ajlogo.png" alt="" /> BRANCHES
+          </h3>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <video id="video-background" autoplay muted loop>
+        <source src="/static/assets/images/ajintro2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <br />
+
+    <div class="container-wrapper">
+      <div class="container_">
+        <section
+          id="computer"
+          class="branch"
+          onclick="vote('Computer Science and Engineering')"
+        >
+          <h2><a href="{% url 'cse' %}">Computer Science Engineering</a></h2>
+        </section>
+      </div>
+
+      <div class="container_">
+        <section
+          id="info"
+          class="branch"
+          onclick="vote('Information Science Engineering')"
+        >
+          <h2><a href="{% url 'ise' %}">Information Science Engineering</a></h2>
+        </section>
+      </div>
+
+      <div class="container_">
+        <section
+          id="electrical"
+          class="branch"
+          onclick="vote('Electrical Engineering')"
+        >
+          <h2><a href="{% url 'ece' %}">Electrical Engineering</a></h2>
+        </section>
+      </div>
+
+      <div class="container_">
+        <section id="civil" class="branch" onclick="vote('Civil Engineering')">
+          <h2><a href="{% url 'civil' %}">Civil Engineering</a></h2>
+        </section>
+      </div>
+    </div>
+    <!-- <div class="centered-container">
+    <section id="mechanical" class="branch" onclick="vote('Mechanical Engineering')">
+        <h2> <a href="mech.html">Mechanical Engineering</a></h2>
+    </section>
+</div> -->
+    <!-- Back Button -->
+    <a href="{% url 'Index' %}">
+      <button>Go Back</button>
+    </a>
+
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/static/assets/js/main.js"></script>
+  </body>
+</html>
